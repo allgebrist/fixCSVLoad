@@ -13,7 +13,7 @@ server <- function(input, output) {
       dpath <- input$file1$datapath
     }
     
-   mat <- read.csv(dpath,header = TRUE,
+   mat <- read.csv(dpath,header = FALSE,
                      sep = ",",
                     quote='"')
    mat$X <- NULL
